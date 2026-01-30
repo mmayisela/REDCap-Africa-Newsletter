@@ -7,6 +7,35 @@
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 
+  <!-- Accordion CSS (email-safe) -->
+  <style>
+    .expand-content {
+      display: none;
+    }
+
+    input[type=checkbox]:checked + .expand-content {
+      display: block;
+    }
+
+    /* Default label text */
+    .read-more-label::after {
+      content: "Read more →";
+    }
+
+    /* When expanded */
+    input[type=checkbox]:checked ~ .read-more-label::after {
+      content: "Read less ←";
+    }
+
+    .read-more-label {
+      color: #b11226;
+      font-weight: 600;
+      cursor: pointer;
+      display: inline-block;
+      margin-top: 10px;
+    }
+  </style>
+
   <!-- Outlook fallback -->
   <!--[if mso]>
     <style>
@@ -43,161 +72,129 @@
 
         <!-- INTRO -->
         <tr>
-          <td style="padding:20px 20px 1px 20px;
-           font-family:'Montserrat', Arial, Helvetica, sans-serif;
-           font-size:14px;
-           line-height:2;
-           color:#000000;">
-
+          <td style="padding:20px 20px 5px 20px;
+                     font-family:'Montserrat', Arial, Helvetica, sans-serif;
+                     font-size:14px;
+                     line-height:2;
+                     color:#000000;">
 
             <p>Dear REDCap Africa Consortium Member,</p>
 
-             <p>
-      Welcome to 2026 and to the very first edition of the <strong style="color:#b11226;">  REDCap Africa Newsletter!</strong>
-      We’re thrilled to launch this platform to keep our growing community connected, informed, and inspired.
-      This newsletter will bring you the latest updates from REDCap Africa, highlight upcoming trainings,
-      and showcase the incredible work of our community members.
-    </p>
+            <p>
+              Welcome to 2026 and to the very first edition of the
+              <strong style="color:#b11226;">REDCap Africa Newsletter!</strong>
+              We’re thrilled to launch this platform to keep our growing community connected,
+              informed, and inspired.
+            </p>
 
-    <p>
-      Looking back, last year’s symposium was a true testament to the power of collaboration across the continent, bringing together innovators, researchers, and practitioners to share ideas and advance health research.
-      As we step into 2026, we’re building on that momentum, and we can’t wait to continue this journey with you.
-    </p>
+            <p>
+              As we step into 2026, we’re building on last year’s momentum and look forward
+              to continuing this journey with you.
+            </p>
+
           </td>
         </tr>
 
-        <!-- 2025 HIGHLIGHTS -->
+        <!-- 2025 REVIEW -->
         <tr>
-          <td style="padding:0px 20px 5px 20px;
-           font-family:'Montserrat', Arial, Helvetica, sans-serif;
-           font-size:14px;
-           line-height:2;
-           color:#000000;">
+          <td style="padding:0 20px 10px 20px;
+                     font-family:'Montserrat', Arial, Helvetica, sans-serif;
+                     font-size:14px;
+                     line-height:2;
+                     color:#000000;">
 
-
-            <h3 style="margin-top:0; color:#b11226; text-align: center;">2025 In Review</h3>
+            <h3 style="margin-top:0; color:#b11226; text-align:center;">2025 In Review</h3>
 
             <p>Last year we successfully hosted:</p>
             <ul>
-              ☎️ 12 Regional Calls</p>
-              🧑🏽‍🏫 15 Trainings – including two at the symposium</li>
+              <li>☎️ 9 Regional Calls</li>
+              <li>🧑🏽‍🏫 9 Trainings – including two at the symposium</li>
             </ul>
 
-            <p>
-The 2025 REDCap Africa Symposium in Durban, hosted by the Africa Health Research Institute, was a true celebration of representation:            </p>
-
+            <p>The 2025 REDCap Africa Symposium in Durban brought together:</p>
             <ul>
-              🏢 25 Institutions </p>
-              🌍 8 Countries
+              <li>🏢 25 Institutions</li>
+              <li>🌍 8 Countries</li>
             </ul>
 
-            <img src="https://raw.githubusercontent.com/mmayisela/REDCap-Africa-Newsletter/main/REDCap%20Africa%20symposium%202025FEB.png" 
-     alt="REDCap Africa Symposium 2025" 
-     style="border: 4px solid #b11226 ; height:auto; max-width:100%;">
+            <img src="https://raw.githubusercontent.com/mmayisela/REDCap-Africa-Newsletter/main/REDCap%20Africa%20symposium%202025FEB.png"
+                 alt="REDCap Africa Symposium 2025"
+                 style="border:4px solid #b11226; height:auto; max-width:100%;" />
 
-
-
-            
           </td>
         </tr>
 
-        <!-- UPCOMING TRAININGS -->
-        <tr>
-  <td style="padding:20px;
-             font-family:'Montserrat', Arial, Helvetica, sans-serif;
-             font-size:14px;
-             color:#000000;">
-
-    <h3  style="margin-top:0; color:#b11226; text-align: center;">Upcoming Trainings and Regional calls</h3>
-
-    <!-- Rounded table container with RED border -->
-    <table width="100%" cellpadding="0" cellspacing="0" border="0"
-           style="border:2px solid #b11226;
-                  border-radius:12px;
-                  overflow:hidden;
-                  background-color:#ffffff;">
-
-      <!-- Header row ONLY -->
-      <tr >
-        <td style="padding:10px; font-weight:600; color:#b11226;">Date</td>
-        <td style="padding:10px; font-weight:600; color:#b11226;">Training</td>
-        <td style="padding:10px; font-weight:600; color:#b11226;">Register</td>
-      </tr>
-
-      <!-- Content rows (WHITE) -->
-      <tr>
-        <td style="padding:10px;">12 Feb 2026</td>
-        <td style="padding:10px;">REDCap Introductory Workshop</td>
-        <td style="padding:10px;">
-          <a href="https://redcap.core.wits.ac.za/redcap/surveys/?s=T4TRKR98JWTDADL7" style="color:#b11226; text-decoration:none;">Register</a>
-        </td>
-      </tr>
-
-      <tr>
-        <td style="padding:10px;">26 Feb 2026</td>
-        <td style="padding:10px;">REDCap Advanced Workshop</td>
-        <td style="padding:10px;">
-          <a href="https://redcap.core.wits.ac.za/redcap/surveys/?s=T4TRKR98JWTDADL7" style="color:#b11226; text-decoration:none;">Register</a>
-        </td>
-      </tr>
-
-      <tr>
-        <td style="padding:10px;">12 Mar 2026</td>
-        <td style="padding:10px;">REDCap Regional Calls</td>
-        <td style="padding:10px;">
-          <a href="TRAINING_LINK_3" style="color:#b11226; text-decoration:none;">Register</a>
-        </td>
-      </tr>
-
-    </table>
-
-  </td>
-</tr>
-
-
-
         <!-- USER SPOTLIGHT -->
         <tr>
-  <td style="padding:20px;
-             font-family:'Montserrat', Arial, Helvetica, sans-serif;
-             font-size:14px;
-             color:#000000;
-             background-color:#ffd8d8;">
+          <td style="padding:20px;
+                     font-family:'Montserrat', Arial, Helvetica, sans-serif;
+                     font-size:14px;
+                     color:#000000;
+                     background-color:#f7eeee;">
 
-    <h3 style="margin-top:0; color:#b11226; text-align: center;">User Spotlight</h3>
+            <h3 style="margin-top:0; color:#b11226; text-align:center;">User Spotlight</h3>
 
-    <table width="100%" cellpadding="0" cellspacing="0">
-      <tr>
-        <td width="150" valign="top" style="padding-right:15px;">
-          <img src="https://raw.githubusercontent.com/mmayisela/REDCap-Africa-Newsletter/main/USEROFTHEMONTHFEB.png"
-               width="140"
-               alt="User of the Month"
-               style="display:block; border:2px solid #b11226;" />
-        </td>
+            <table width="100%" cellpadding="0" cellspacing="0">
+              <tr>
+                <td width="150" valign="top" style="padding-right:15px;">
+                  <img src="https://raw.githubusercontent.com/mmayisela/REDCap-Africa-Newsletter/main/USEROFTHEMONTHFEB.png"
+                       width="140"
+                       alt="User of the Month"
+                       style="display:block; border:2px solid #b11226;" />
+                </td>
 
-        <td valign="top">
-          <p style="margin-top:0;">
-            <strong style="color:#b11226;">Dr. Patricia Swart</strong><br />
-            DIPLOMICS, South Africa
-            <p> My name is Patricia </p>
-            <p style="margin-top:10px;">
-  <a href="YOUR_LINK_HERE"
-     style="color:#b11226;
-            font-weight:600;
-            text-decoration:none;">
-    Read more →
-  </a>
-</p>
-          <p>
-            
-          </p>
-        </td>
-      </tr>
-    </table>
-  </td>
-</tr>
+                <td valign="top">
 
-<!-- 2026 SYMPOSIUM -->
+                  <p style="margin-top:0;">
+                    <strong style="color:#b11226;">Dr. Patricia Swart</strong><br />
+                    DIPLOMICS, South Africa
+                  </p>
+
+                  <p>
+                    Dr Patricia Swart has been using REDCap since her postdoctoral days, and she hasn’t looked back.
+                    What began with mastering the fundamentals has grown into leading REDCap implementation for
+                    a national research infrastructure.
+                  </p>
+
+                  <!-- Toggle -->
+                  <input type="checkbox" id="patricia-toggle" style="display:none;" />
+
+                  <!-- Expanded content -->
+                  <div class="expand-content">
+                    <p>
+                      Drawn to REDCap’s flexibility and strong global community, Dr Swart spearheaded its adoption
+                      within
+                      <a href="https://www.diplomics.org.za" style="color:#b11226; text-decoration:none;">
+                        DIPLOMICS
+                      </a>,
+                      a DSTI-supported national research programme, in her role as Bioinformatics Coordinator.
+                    </p>
+
+                    <p>
+                      Today, REDCap underpins major initiatives such as the
+                      <a href="https://www.1ksa.org.za" style="color:#b11226; text-decoration:none;">
+                        1KSA project
+                      </a>,
+                      a multisite effort sequencing over 1,000 genomes central to South Africa’s biodiversity.
+                    </p>
+
+                    <p>
+                      Following REDCap Africa 2025, its use expanded further into training and internship programmes,
+                      demonstrating how REDCap can evolve from a practical tool into critical research infrastructure.
+                    </p>
+                  </div>
+
+                  <!-- Read more / less -->
+                  <label for="patricia-toggle" class="read-more-label"></label>
+
+                </td>
+              </tr>
+            </table>
+
+          </td>
+        </tr>
+
+        <!-- 2026 SYMPOSIUM -->
         <tr>
           <td style="padding:20px;
                      font-family:'Montserrat', Arial, Helvetica, sans-serif;
@@ -205,18 +202,14 @@ The 2025 REDCap Africa Symposium in Durban, hosted by the Africa Health Research
                      line-height:2;
                      color:#000000;">
 
-            <h3 style="margin-top:0; color:#b11226; text-align: center;">2026 REDCap Africa Symposium</h3>
-
-            
+            <h3 style="margin-top:0; color:#b11226; text-align:center;">
+              2026 REDCap Africa Symposium
+            </h3>
 
             <img src="https://raw.githubusercontent.com/mmayisela/REDCap-Africa-Newsletter/main/SYMPOSIUM2026FEB.jpeg"
+                 alt="REDCap Africa Symposium 2026"
+                 style="border:4px solid #b11226; height:auto; max-width:100%;" />
 
-     alt="REDCap Africa Symposium 2026" 
-     style="border: 4px solid #b11226 ; height:auto; max-width:100%;">
-
-
-
-            
           </td>
         </tr>
 
@@ -229,35 +222,32 @@ The 2025 REDCap Africa Symposium in Durban, hosted by the Africa Health Research
                      border-top:3px solid #b11226;">
 
             <p>
-              You are receiving this email because you are part of <strong>REDCap Africa Consortium mailing list</strong>.
+              You are receiving this email because you are part of the
+              <strong>REDCap Africa Consortium mailing list</strong>.
             </p>
 
             <p>
-              For questions  contact
-              <a href="mailto:support@witsredcap.co.za" style="color:#b11226;">support@witsredcap.co.za</a>.
+              Questions? Contact
+              <a href="mailto:support@witsredcap.co.za" style="color:#b11226;">
+                support@witsredcap.co.za
+              </a>
             </p>
-
-            
 
             <p>
               Kind regards,<br />
-              <strong style="color:#b11226;">Mapule Nhlapho </strong>| <strong>Chairperson</strong><br />
-              On behalf of REDCap Africa Consortium 
+              <strong style="color:#b11226;">Mapule Nhlapho</strong> | Chairperson<br />
+              On behalf of the REDCap Africa Consortium
             </p>
 
-            <p style="text-align: center;">
-  To opt out, 
-  <a href="https://redcap.africa/surveys/?s=Y9JP4NA78AMDT93D" style="color:#b11226;">
-    unsubscribe here
-  </a>
-</p>
-
+            <p style="text-align:center;">
+              To opt out,
+              <a href="https://redcap.africa/surveys/?s=Y9JP4NA78AMDT93D" style="color:#b11226;">
+                unsubscribe here
+              </a>
             </p>
+
           </td>
         </tr>
-
-
-        
 
       </table>
       <!-- END MAIN CONTAINER -->
